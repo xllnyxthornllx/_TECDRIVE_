@@ -1,0 +1,381 @@
+Quiero que generes un proyecto web empresarial completo y profesional para mi sistema de almacenamiento en la nube llamado TecDrive. El proyecto debe ser realista, modular, escalable, con base de datos y con interfaz tipo Google Drive.
+
+🔵 IDENTIDAD DEL PROYECTO
+
+Nombre: TecDrive
+
+Tipo: sistema de almacenamiento en la nube (estilo Google Drive) enfocado en privacidad y control total de los datos.
+
+Yo subiré el logo del proyecto. Úsalo como assets/logo.png.
+
+Estilo visual: SaaS empresarial moderno (tipo Google Drive / Dropbox / OneDrive).
+
+Paleta de colores:
+
+Azul corporativo (del logo)
+
+Blanco
+
+Negro / gris oscuro (para modo oscuro)
+
+Tonos suaves tecnológicos
+
+📁 ESTRUCTURA DEL PROYECTO
+
+Crea esta estructura de archivos:
+
+/public
+  index.html
+  about.html
+  login.html
+  register.html
+  dashboard.html
+  pricing.html
+  contact.html
+  faq.html
+
+  /assets
+    logo.png
+    icons/
+
+  /css
+    main.css
+    theme.css
+    animations.css
+
+  /js
+    main.js
+    ui.js
+    auth.js
+    dashboard.js
+
+/backend
+  server.js (o app.py, main.go, index.php — elige el stack más adecuado)
+  /routes
+    auth.js
+    users.js
+    payment.js
+    drive.js
+  /controllers
+  /models
+  /database
+    schema.sql o modelos según el motor elegido
+
+
+Todo el frontend debe ser con HTML + CSS + JavaScript puro, sin frameworks de UI (no Bootstrap, no Tailwind).
+
+🧑‍💼 EQUIPO DEL PROYECTO
+
+En about.html agrega una sección profesional de equipo de TecDrive con tarjetas animadas y estos integrantes:
+
+Rodrigo Aldair Tapia Mamani
+
+Joel Alexis Puma Murillo
+
+Jose Carlos Talavera Pezo
+
+Andree Xavi Canaza Viza
+
+Uriel Aron Torres Salazar
+
+Incluye nombre, rol (puedes asignar uno profesional a cada uno) y un pequeño texto/placeholder.
+
+🧩 PÁGINAS Y CONTENIDO
+1) index.html – Landing principal (antes de login/registro)
+
+Debe ser una landing empresarial muy cuidada, con:
+
+Hero principal:
+
+Logo TecDrive
+
+Título llamativo (ej: “TecDrive – Tu nube privada y segura”)
+
+Subtítulo corto y claro.
+
+Botones:
+
+“Comenzar ahora” → register.html
+
+“Ver planes” → pricing.html
+
+Sección de historia/propósito del proyecto (IMPORTANTE):
+Antes de que el usuario se registre o inicie sesión, debe haber una sección que cuente:
+
+Qué es TecDrive: un servicio de nube privada que permite guardar, organizar y acceder a archivos desde cualquier lugar, pero con control total del usuario.
+
+Por qué se hizo:
+
+Por la preocupación por la privacidad en la nube tradicional.
+
+Por los costos mensuales que suben sin control.
+
+Para tener una alternativa propia, segura y accesible.
+
+Con qué intención:
+
+Dar a las personas y equipos una nube que puedan sentir “suya”.
+
+Ofrecer una experiencia tipo Google Drive, pero con foco en privacidad y control.
+
+Pensada para pruebas, proyectos, estudiantes, profesionales y pequeñas empresas.
+
+Para qué público:
+
+Usuarios comunes que necesitan más control.
+
+Estudiantes y profesionales que manejan muchos archivos.
+
+Pequeños equipos de trabajo y emprendimientos.
+
+Esta sección debe estar bien redactada, con párrafos claros, títulos y quizás un pequeño timeline o bloques explicativos.
+
+Sección de características (tarjetas con íconos):
+
+Seguridad y cifrado
+
+Control total de datos
+
+Acceso multi-dispositivo
+
+Interfaz sencilla tipo Drive
+
+Vista previa del dashboard (mockup o layout).
+
+CTA final para registrarse.
+
+2) about.html – Sobre TecDrive
+
+Historia del proyecto.
+
+Misión, visión y valores.
+
+Sección de equipo con los integrantes mencionados.
+
+Enfoque profesional, como una startup tecnológica real.
+
+3) login.html
+
+Formulario de inicio de sesión con:
+
+Email
+
+Contraseña
+
+Botón “Iniciar sesión”.
+
+Botones de login social:
+
+Google
+
+Facebook
+
+GitHub
+
+Validaciones y mensajes de error/success visuales.
+
+Enlace a register.html.
+
+4) register.html
+
+Formulario de registro con:
+
+Nombre completo
+
+Email
+
+Contraseña
+
+Confirmación de contraseña
+
+Botón “Crear cuenta”.
+
+Botones de registro con Google / Facebook / GitHub (visual + lógica opcional).
+
+Validaciones y mensajes de error/success.
+
+Tras registro correcto, el usuario puede iniciar sesión y acceder al dashboard de prueba.
+
+5) pricing.html – Planes
+
+Por ahora solo quiero un plan:
+
+Plan Básico – S/ 35 al mes
+
+5 GB de almacenamiento
+
+Acceso completo al dashboard
+
+Subida de archivos
+
+Gestión de carpetas
+
+Soporte básico
+
+Diseña esta página como un pricing de SaaS profesional, con una tarjeta principal destacada para este plan, texto explicativo y botón “Contratar plan” que lleve a register.html o a un flujo de pago simulado.
+
+6) dashboard.html – Interfaz tipo Google Drive
+
+Esta es la interfaz que ve el usuario después de iniciar sesión:
+
+Sidebar:
+
+Inicio
+
+Mis archivos
+
+Favoritos
+
+Papelera
+
+Configuración
+
+Barra superior:
+
+Logo minimizado de TecDrive
+
+Buscador de archivos
+
+Botón cambio de tema (claro/oscuro)
+
+Iconos de notificaciones y perfil
+
+Zona principal:
+
+Vista de archivos en cuadrícula o lista (conmutador)
+
+Botones:
+
+Crear carpeta
+
+Subir archivo
+
+Panel lateral de detalles al seleccionar un archivo.
+
+Funcionalidades mínimas (pueden ser simuladas o reales según el backend):
+
+Array de archivos y carpetas ligado a la BD.
+
+Crear carpeta → inserta registro en la BD o estructura simulada.
+
+Subir archivo → al menos simular la subida (nombre, tamaño, tipo, fecha).
+
+Si el usuario no tiene plan Básico activo:
+
+Mostrar vista limitada (modo prueba).
+
+Bloquear funciones avanzadas y mostrar mensaje “Activa tu plan para tener acceso completo”.
+
+7) faq.html y contact.html
+
+faq.html: acordeón con preguntas frecuentes sobre TecDrive, seguridad, planes y uso.
+
+contact.html: formulario de contacto con:
+
+Nombre
+
+Email
+
+Tipo de consulta
+
+Mensaje
+Al enviar, mostrar notificación de éxito simulada.
+
+🔐 AUTENTICACIÓN Y BASE DE DATOS
+
+Quiero un sistema real, no solo mock:
+
+Registro:
+
+Guarda usuarios en una base de datos.
+
+Login:
+
+Verifica credenciales.
+
+Manejo de sesiones o JWT.
+
+Roles:
+
+user_free → usuario registrado sin plan.
+
+user_basic → usuario con plan de 35 activado.
+
+Base de datos: puedes usar MySQL, PostgreSQL, MongoDB o Firebase, lo que consideres mejor.
+Define al menos estas entidades:
+
+users:
+  id
+  name
+  email
+  password_hash
+  plan_type (user_free / user_basic)
+  created_at
+
+files:
+  id
+  owner_id (relación con users.id)
+  filename
+  size
+  type
+  path_or_url
+  created_at
+
+
+Incluye scripts o modelos para crear estas tablas/colecciones.
+
+💳 PLAN Y PAGOS (SIMULADO)
+
+Página pricing.html con el Plan Básico – S/ 35 al mes.
+
+Lógica de pago simulada:
+
+Cuando el usuario “pague” (botón de prueba), se actualiza su plan_type a user_basic.
+
+Usa un endpoint o ruta backend para cambiar el plan del usuario (simulado, sin pasarela real).
+
+🎨 DISEÑO, UX Y ANIMACIONES
+
+Modo claro y oscuro con toggle, usando localStorage.
+
+Animaciones:
+
+fade-in, slide-up, hover con sombras y ligero efecto 3D en tarjetas.
+
+Parallax suave en el hero de index.html.
+
+Estilo totalmente empresarial, limpio, moderno.
+
+Diseño totalmente responsive para móvil, tablet y escritorio.
+
+🔧 JAVASCRIPT
+
+main.js:
+
+Lógica global de tema, scroll suave, animaciones de entrada.
+
+ui.js:
+
+Notificaciones, modales, acordeones de FAQ, componentes reutilizables.
+
+auth.js:
+
+Validación de formularios, llamadas al backend para login/registro, manejo de errores.
+
+dashboard.js:
+
+Gestión de la lista de archivos, vistas, panel de detalles, funciones de crear carpeta y subir archivo (conectado o simulado contra el backend).
+
+📌 REQUISITOS FINALES
+
+Código limpio, modular y comentado.
+
+Arquitectura clara tipo proyecto real de empresa.
+
+Frontend sin frameworks de CSS grandes (no Tailwind, no Bootstrap).
+
+El backend puede estar hecho en el stack que consideres más profesional (Node/Express, Python/Flask, etc.).
+
+Todo debe verse y sentirse como un producto listo para demo de startup.
+
+FIN DEL PROMPT.
