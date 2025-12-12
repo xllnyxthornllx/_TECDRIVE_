@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Cloud, Lock, Shield, Smartphone, Users, Zap } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import Image from "next/image";
+import LoginButton from "@/components/auth/LoginButton";
 
 export default function LandingPage() {
   return (
@@ -35,17 +36,13 @@ export default function LandingPage() {
             </nav>
             <div className="flex items-center gap-3">
               <ThemeToggle />
-              <Button asChild variant="ghost" size="sm">
-                <Link href="/api/auth/signin">Iniciar sesión</Link>
-              </Button>
-              <Button asChild size="sm">
-                <Link href="/api/auth/signin">Comenzar ahora</Link>
-              </Button>
+              <LoginButton />
             </div>
           </div>
         </div>
       </header>
 
+      {/* The rest of the landing page remains the same... */}
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
